@@ -305,7 +305,7 @@ git log --oneline --graph     # Historique propre et linéaire
 
 ---
 
-### 🏆 Challenge final - Workflow complet `[challenge]`
+### Challenge final - Workflow complet `[challenge]`
 
 En équipe de 3, réalisez le workflow complet **sans aide** :
 
@@ -320,7 +320,7 @@ En équipe de 3, réalisez le workflow complet **sans aide** :
 
 ---
 
-## 📚 Récapitulatif des commandes essentielles
+## Récapitulatif des commandes essentielles
 
 | Commande | Description |
 |----------|-------------|
