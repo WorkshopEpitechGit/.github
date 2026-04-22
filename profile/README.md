@@ -1,4 +1,4 @@
-# 🧪 Workshop GitHub — Branches, Pull Requests & Collaboration
+# Workshop GitHub Epitech - Branches, Pull Requests & Collaboration
 
 > Atelier pratique pour découvrir le workflow Git/GitHub en équipe.  
 > Chaque module contient un contexte réaliste, des commandes à exécuter et des questions de validation.
@@ -20,7 +20,7 @@
 
 > **Contexte :** Tu rejoins une équipe qui développe un site web. Tout le monde travaille sur le même dépôt GitHub. Avant de coder, il faut configurer ton environnement.
 
-### Exercice 1 — Cloner le dépôt partagé `[pratique]`
+### Exercice 1 - Cloner le dépôt partagé `[pratique]`
 
 L'équipe a déjà un dépôt sur GitHub. Tu dois en faire une copie locale sur ta machine.
 
@@ -40,13 +40,13 @@ ls -la   # Observer les fichiers, dont le dossier .git
 
 ## 2. Branches
 
-> **Contexte :** Le chef de projet demande d'ajouter une page "À propos". Tu ne dois **pas** modifier directement `main` — toujours travailler dans une branche dédiée.
+> **Contexte :** Le chef de projet demande d'ajouter une page "À propos". Tu ne dois **pas** modifier directement `main` - toujours travailler dans une branche dédiée.
 
 > A quoi ca sert les branches ? => Eh bah Jami ca sert à organiser dans un premier temps ton code, tu te retrouves plus facilement dans un endroit dédiée a une feature. Ca permet aussi a tes coéquippiers de suivre ton avancé avec les notions d'après, à travers une pull request on force nos équipiers a lire notre code afin qu'ils puissent dire si oui ou non il semble correcte
 
 > Dans quel contexte on met en place des branches ? => C'est pas compliqué, si tu as une nouvelles features qu'elle soit grande ou non tu **DOIS** faire une branche, que ce soit une gestion de map ou la création d'un bouton tu dois toujours faire des pull request
 
-### Exercice 2.1 — Créer et basculer sur une branche `[pratique]`
+### Exercice 2.1 - Créer et basculer sur une branche `[pratique]`
 
 Une branche est une copie parallèle du code. Les modifications n'affectent pas `main` tant que tu n'as pas mergé.
 
@@ -59,7 +59,7 @@ git branch                           # L'étoile indique la branche courante
 
 ---
 
-### Exercice 2.2 — Faire des modifications et committer `[pratique]`
+### Exercice 2.2 - Faire des modifications et committer `[pratique]`
 
 Crée la page `about.html`, puis enregistre tes changements dans un commit.
 
@@ -75,7 +75,7 @@ git commit -m "feat: ajouter la page about"
 
 ---
 
-### Exercice 2.3 — Naviguer entre branches `[concept]`
+### Exercice 2.3 - Naviguer entre branches `[concept]`
 
 Tu peux basculer entre branches à tout moment. Observe que les fichiers changent réellement sur ton disque !
 Demander a un deuxième membre de créer une autre branch et refaite les étapes 2.1 et 2.2 afin de créer une nouvelle branche et essayer ces étapes suivantes
@@ -99,7 +99,7 @@ ls                                   # about.html est de retour
 
 > **Contexte :** Ta branche existe localement, mais tes collègues ne la voient pas encore. Il faut pousser ton travail sur GitHub pour pouvoir collaborer.
 
-### Exercice 3.1 — Push ta branche sur GitHub `[pratique]`
+### Exercice 3.1 - Push ta branche sur GitHub `[pratique]`
 
 La première fois, tu dois dire à Git où push cette branche.
 
@@ -112,7 +112,7 @@ git push                                 # Les fois suivantes, git push suffit
 
 ---
 
-### Exercice 3.2 — Récupérer le travail des autres `[pratique]`
+### Exercice 3.2 - Récupérer le travail des autres `[pratique]`
 
 Pendant que tu travaillais, une collègue a pushé des changements sur `main`. Tu dois les récupérer.
 
@@ -123,11 +123,11 @@ git pull                  # = git fetch + git merge
 git log --oneline --graph # Voir les nouveaux commits
 ```
 
-> 🟡 `git pull` met directement à jour ta branche locale. `git fetch` est plus prudent — il télécharge sans fusionner.
+> 🟡 `git pull` met directement à jour ta branche locale. `git fetch` est plus prudent - il télécharge sans fusionner.
 
 ---
 
-### Exercice 3.3 — Comprendre fetch vs pull `[concept]`
+### Exercice 3.3 - Comprendre fetch vs pull `[concept]`
 
 La différence entre `fetch` et `pull` est subtile mais importante en équipe.
 
@@ -149,7 +149,7 @@ git merge origin/main           # Appliquer manuellement
 
 > **Contexte :** Ta page "titre" est prête. Avant de l'intégrer à `main`, l'équipe doit relire ton code. C'est à ça que sert la Pull Request.
 
-### Exercice 4.1 — Créer une Pull Request sur GitHub `[pratique]`
+### Exercice 4.1 - Créer une Pull Request sur GitHub `[pratique]`
 
 Une PR est une demande de fusion. Elle permet la revue de code, les discussions, et les tests automatiques.
 
@@ -171,7 +171,7 @@ Ou alors :
 
 ---
 
-### Exercice 4.2 — Faire une revue de code `[concept]`
+### Exercice 4.2 - Faire une revue de code `[concept]`
 
 En binôme : l'un crée la PR, l'autre la relit. Utilisez les commentaires GitHub pour les retours.
 
@@ -186,7 +186,7 @@ En binôme : l'un crée la PR, l'autre la relit. Utilisez les commentaires GitHu
 
 ---
 
-### Exercice 4.3 — Merger la Pull Request `[pratique]`
+### Exercice 4.3 - Merger la Pull Request `[pratique]`
 
 Une fois approuvée, la PR peut être fusionnée dans `main`.
 
@@ -199,7 +199,7 @@ git push origin --delete feature/page-about   # Supprimer la branche distante
 
 **Question :** Pourquoi supprimer la branche après le merge ?
 
-- A. Pour garder le dépôt propre — la branche a rempli son rôle 
+- A. Pour garder le dépôt propre - la branche a rempli son rôle 
 - B. C'est obligatoire, sinon Git crashe
 - C. Pour libérer de l'espace disque (les commits sont perdus)
 
@@ -207,9 +207,9 @@ git push origin --delete feature/page-about   # Supprimer la branche distante
 
 ## 5. Conflits
 
-> **Contexte :** Deux personnes ont modifié le même fichier en même temps. Git ne sait pas quelle version garder — il faut résoudre le conflit manuellement.
+> **Contexte :** Deux personnes ont modifié le même fichier en même temps. Git ne sait pas quelle version garder - il faut résoudre le conflit manuellement.
 
-### Exercice 5.1 — Provoquer un conflit (intentionnellement) `[pratique]`
+### Exercice 5.1 - Provoquer un conflit (intentionnellement) `[pratique]`
 
 Pour comprendre les conflits, il faut en créer un. Travaillez à deux : modifiez la même ligne du même fichier dans deux branches différentes.
 
@@ -226,7 +226,7 @@ git add . && git commit -m "fix: autre titre"
 
 ---
 
-### Exercice 5.2 — Identifier et lire un conflit `[concept]`
+### Exercice 5.2 - Identifier et lire un conflit `[concept]`
 
 Lors du merge, Git insère des marqueurs dans le fichier pour montrer les deux versions.
 
@@ -249,7 +249,7 @@ Le fichier contiendra quelque chose comme :
 
 ---
 
-### Exercice 5.3 — Résoudre le conflit `[pratique]`
+### Exercice 5.3 - Résoudre le conflit `[pratique]`
 
 Ouvre le fichier dans un éditeur, choisis quelle version garder (ou combine les deux), puis supprime les marqueurs.
 
@@ -274,7 +274,7 @@ git log --oneline --graph   # Voir le commit de merge
 
 > **Contexte :** Votre équipe maîtrise les bases ! Voici des commandes avancées très utiles au quotidien, suivies d'un challenge en équipe.
 
-### Exercice 6.1 — git stash : mettre de côté `[concept]`
+### Exercice 6.1 - git stash : mettre de côté `[concept]`
 
 Tu dois changer de branche mais tu as des modifications en cours non prêtes à committer ? `git stash` les met temporairement de côté.
 
@@ -289,7 +289,7 @@ git stash list        # Voir tous les stashs
 
 ---
 
-### Exercice 6.2 — git rebase : rejouer l'histoire `[concept]`
+### Exercice 6.2 - git rebase : rejouer l'histoire `[concept]`
 
 Au lieu de merger (qui crée un commit de merge), `rebase` rejoue tes commits par-dessus `main`. L'historique reste linéaire.
 
@@ -303,7 +303,7 @@ git log --oneline --graph     # Historique propre et linéaire
 
 ---
 
-### 🏆 Challenge final — Workflow complet `[challenge]`
+### 🏆 Challenge final - Workflow complet `[challenge]`
 
 En équipe de 3, réalisez le workflow complet **sans aide** :
 
