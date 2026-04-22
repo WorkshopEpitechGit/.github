@@ -153,8 +153,10 @@ git merge origin/main           # Appliquer manuellement
 
 Une PR est une demande de fusion. Elle permet la revue de code, les discussions, et les tests automatiques.
 
+Ensuite, allez chercher le fichier ```main.c``` écrit volontairement de manière ératique, corriger ce fichier et faites une pull request de ce changemebt
+
 ```bash
-git push origin feature/page-about   # S'assurer que tout est pushé
+git push origin [nom-du-chef-de-groupe]/coding-style-main   # S'assurer que tout est pushé
 ```
 Après avoir push sur ta branch, tu auras directement la capacité de pouvoir fusionné ta branch avec la branch que tu souhaites 
 
