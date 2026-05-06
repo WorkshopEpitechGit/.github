@@ -25,8 +25,8 @@
 L'équipe a déjà un dépôt sur GitHub. Tu dois en faire une copie locale sur ta machine.
 
 ```bash
-git clone https://github.com/equipe/projet-web.git
-cd projet-web
+git clone "ssh-"nom du github""
+cd groupe* # Avec * => le numéro qui vous sera attribué
 ls -la   # Observer les fichiers, dont le dossier .git
 ```
 
@@ -83,7 +83,7 @@ Demander a un deuxième membre de créer une autre branch et refaite les étapes
 ```bash
 git checkout main                    # Retour sur main (about.html disparaît)
 ls                                   # about.html n'est plus là !
-git checkout [nom-de-votre-deuxième-coéquippier]/titre      # Retour sur ta branche
+git checkout [nom-de-votre-chef-de-groupe]/titre      # Retour sur ta branche
 ls                                   # about.html est de retour
 ```
 
